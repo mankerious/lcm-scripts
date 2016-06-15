@@ -1,0 +1,68 @@
+{
+  "datasets": [
+    {
+      "type": "dataset",
+      "title": "Transactions",
+      "id": "dataset.transactions",
+      "columns": [
+        {
+          "type": "anchor",
+          "id": "attr.transactions.factsof",
+          "title": "Records of Transactions",
+          "description": null,
+          "folder": "Transactions"
+        },
+        {
+          "type": "attribute",
+          "id": "attr.transactions.brand",
+          "title": "Brand",
+          "description": null,
+          "folder": "Transactions"
+        },
+        {
+          "type": "label",
+          "id": "label.transactions.brand",
+          "reference": "attr.transactions.brand",
+          "title": "Brand",
+          "gd_data_type": "VARCHAR(128)",
+          "gd_type": "GDC.text",
+          "default_label": true
+        },
+        {
+          "type": "attribute",
+          "id": "attr.transactions.transactionid",
+          "title": "Transaction ID",
+          "description": null,
+          "folder": "Transactions"
+        },
+        {
+          "type": "label",
+          "id": "label.transactions.transactionid",
+          "reference": "attr.transactions.transactionid",
+          "title": "Transaction ID",
+          "gd_data_type": "VARCHAR(128)",
+          "gd_type": "GDC.text",
+          "default_label": true
+        },
+        {
+          "type": "fact",
+          "id": "fact.transactions.rate",
+          "title": "Rate",
+          "folder": "Transactions",
+          "gd_data_type": "DECIMAL(12,2)"
+        },
+        {
+          "type": "fact",
+          "id": "fact.transactions.tax",
+          "title": "Tax",
+          "folder": "Transactions",
+          "gd_data_type": "DECIMAL(12,2)"
+        }
+      ]
+    }
+  ],
+  "date_dimensions": [
+
+  ],
+  "title": "LCM Master"
+}
