@@ -29,8 +29,7 @@ VALID_PROJECTS = [MASTERPROJECT1]
  # parser = Yajl::Parser.new
   json1 = File.new('original.json', 'r')
   json2 = File.new('updated.json', 'r')
-  old1 = Parser.parse(json1)
-  new1 = Yajl::Parser.parse(json2)
+  old1, new1 = Yajl::Parser.parse(json1), Yajl::Parser.parse(json2)
   result = JsonCompare.get_diff(old1, new1)
   puts result
 
